@@ -41,18 +41,25 @@ for (i=0;i<Age.length;i++){
 let longString = "This is a very long string which needs " +
                  "to wrap across multiple lines because " +
                  "otherwise my code is unreadable.";
+console.log(longString.toUpperCase()); //This is changed to upper case//
+console.log(longString.toLowerCase()); //This is changed to lower case//
 
-function sortThings(a, b) {
-  a = a.toLowerCase(longString);
-  b = b.toLowerCase(longString);
 
-  if (a > b) {
-    return 1;
-  } else if (a < b) {
-    return -1;
-  } else if (a === b) {
-    return 0;
-  }
-}
+// -- Level 4 -- //
+let stringSimple = "kia Ora";
+let stingSimple2 = "Mucha Gracias";
+let stringSimple3 = "Terima Kasih";
+console.log(stringSimple+","+stingSimple2+","+stringSimple3);
 
-console.log (longThings);
+// -- Level 5 --//
+const sentenceA = "boleh juga";
+const sentenceB = "mari makan";
+
+
+const sentenceC = sentenceA + " " + sentenceB;
+const sentenceD = `${sentenceA} ${sentenceB}`;
+const sentenceE = `${sentenceB} ${sentenceA}`;
+
+console.log(sentenceC);
+console.log(sentenceD);
+console.log(sentenceE);
